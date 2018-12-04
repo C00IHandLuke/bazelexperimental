@@ -5,7 +5,7 @@ Work the same with the the flags set or not.
 
 Found:
 
-Using the flags creates errors in the build. Throws an error saying the symbol is private and connot be imported.
+Using the flags creates errors in the build. Throws an error saying the symbol is private and cannot be imported.
 
 
 The purpose of this repo is to help solve a possible issue with the experimental bazel flags from https://blog.bazel.build/2018/09/28/first-class-resolved-file.html
