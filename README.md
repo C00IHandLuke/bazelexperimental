@@ -31,7 +31,7 @@ Build timestamp as int: 1543588741
 
 Everything builds properly with no flags set and by running:
 ```
-$ bazel build :istiosetup
+$ bazel build :namespace
 ```
 
 
@@ -45,7 +45,7 @@ build --experimental_verify_repository_rules=@bazel_tools//tools/build_defs/repo
 Then running:
 ```
 $ bazel sync
-$ bazel build :istiosetup
+$ bazel build :namespace
 ```
 
 The build fails with these errors:
@@ -56,7 +56,7 @@ ERROR: Error evaluating WORKSPACE file
 ERROR: /bazeltest/resolved.bzl:323:1: symbol '_go_download_sdk' is private and cannot be imported.
 ERROR: /bazeltest/resolved.bzl:324:1: name '_go_download_sdk' is not defined
 ERROR: Error evaluating WORKSPACE file
-ERROR: Skipping ':istiosetup': error loading package 'external': Package 'external' contains errors
+ERROR: Skipping ':namespace': error loading package 'external': Package 'external' contains errors
 WARNING: Target pattern parsing failed.
 ERROR: error loading package 'external': Package 'external' contains errors
 INFO: Elapsed time: 4.528s
