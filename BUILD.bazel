@@ -1,0 +1,6 @@
+load("@k8s_namespace//:defaults.bzl", "k8s_namespace")
+
+k8s_namespace(
+  name = "namespace",
+  template = "namespace.json",
+)
